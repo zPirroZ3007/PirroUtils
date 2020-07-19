@@ -26,8 +26,8 @@
             <url>https://jitpack.io</url>
         </repository>
         <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            <id>nms-repo</id>
+            <url>https://repo.codemc.org/repository/nms/</url>
         </repository>
     </repositories>
 
@@ -39,7 +39,7 @@
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
+            <artifactId>spigot</artifactId>
             <version>1.16.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
