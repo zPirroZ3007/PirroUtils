@@ -73,7 +73,7 @@ public class ItemStackBuilder
 		ItemStack itemStack = item == null ? new ItemStack(material, quantity) : item;
 		ItemStack finalItem;
 		ItemMeta defaultMeta = itemStack.getItemMeta();
-		if (material == XMaterial.PLAYER_HEAD.parseMaterial())
+		if (material == XMaterial.PLAYER_HEAD.parseMaterial().get())
 		{
 
 			finalItem = itemStack.clone();;
