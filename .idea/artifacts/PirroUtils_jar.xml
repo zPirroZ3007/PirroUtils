@@ -3,7 +3,7 @@
     <output-path>$PROJECT_DIR$/../BuildPath</output-path>
     <root id="archive" name="PirroUtils.jar">
       <element id="module-output" name="PirroUtils" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../BuildPath/XSeries-6.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/cryptomorin/XSeries/6.3.1/XSeries-6.3.1.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
