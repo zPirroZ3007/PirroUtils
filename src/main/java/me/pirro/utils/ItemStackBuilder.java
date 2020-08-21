@@ -39,6 +39,12 @@ public class ItemStackBuilder {
 		return this;
 	}
 
+	public ItemStackBuilder setLore(List<String> strings)
+	{
+		lore.addAll(strings);
+		return this;
+	}
+
 	public ItemStackBuilder setName(String name) {
 		this.name = name;
 		return this;
