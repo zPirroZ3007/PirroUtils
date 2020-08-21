@@ -20,6 +20,22 @@ public class DateUtils
 		return sdf.format(date);
 	}
 
+	public static String millisToShortDate(long millis)
+	{
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yy HH:mm");
+		Date date = new Date(millis);
+
+		return sdf.format(date);
+	}
+
+	public static String millisToShortDateNoHour(long millis)
+	{
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yy");
+		Date date = new Date(millis);
+
+		return sdf.format(date);
+	}
+
 	public static String millisToDateNoHour(long millis)
 	{
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -31,6 +47,14 @@ public class DateUtils
 	public static String millisToHour(long millis)
 	{
 		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+		Date date = new Date(millis);
+
+		return sdf.format(date);
+	}
+
+	public static String millisToShortHour(long millis)
+	{
+		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
 		Date date = new Date(millis);
 
 		return sdf.format(date);
@@ -74,14 +98,14 @@ public class DateUtils
 		else
 		{
 			boolean space = false;
-			if(durationSec >= 31536000)
+			if (durationSec >= 31536000)
 			{
 				durationTmp = durationSec / 31536000;
 				durationSec -= durationTmp * 31536000;
 				output += durationTmp + (durationTmp == 1 ? " anno" : " anni");
 				space = true;
 			}
-			if(durationSec >= 2592000)
+			if (durationSec >= 2592000)
 			{
 				durationTmp = durationSec / 2592000;
 				durationSec -= durationTmp * 2592000;
