@@ -19,6 +19,14 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub zPirroZ3007 Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/zPirroZ3007/PirroUtils</url>
+        </repository>
+    </distributionManagement>
+
 
     <repositories>
         <repository>
