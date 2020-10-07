@@ -1,5 +1,6 @@
 package me.pirro.utils;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.google.common.base.Charsets;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -64,10 +65,9 @@ public class ItemStackBuilder {
 		ItemStack itemStack = item == null ? new ItemStack(material, quantity) : item;
 		ItemStack finalItem;
 		ItemMeta defaultMeta = itemStack.getItemMeta();
-		if (material == Material.PLAYER_HEAD) {
+		if (material == (XMaterial.PLAYER_HEAD.parseMaterial().isPresent() ? Material.STONE : XMaterial.PLAYER_HEAD.parseMaterial().get())) {
 
 			finalItem = itemStack.clone();
-			;
 			SkullMeta itemMeta = (SkullMeta) finalItem.getItemMeta();
 			itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
 			itemMeta.setLore(lore);
