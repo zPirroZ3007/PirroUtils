@@ -26,7 +26,6 @@
         </repository>
     </distributionManagement>
 
-
     <repositories>
         <repository>
             <id>jitpack.io</id>
