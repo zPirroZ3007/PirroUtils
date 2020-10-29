@@ -14,5 +14,5 @@ Here there is the library that I use in most of my public plugins.
     <artifactId>PirroUtils</artifactId>
     <version>1.0-SNAPSHOT</version>
     <scope>compile</scope>
- </dependency>
+</dependency>
 ```
