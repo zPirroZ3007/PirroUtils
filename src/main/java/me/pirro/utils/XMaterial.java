@@ -1546,7 +1546,7 @@ public enum XMaterial {
 
     public boolean isSimilar(@Nonnull ItemStack item) {
         Objects.requireNonNull(item, "Cannot compare with null ItemStack");
-        if (item.getType() != this.parseMaterial().orElse((Object)null)) {
+        if (item.getType() != this.parseMaterial().orElse(null)) {
             return false;
         } else {
             return ISFLAT || this.isDamageable() || item.getDurability() == this.data;
