@@ -3,8 +3,9 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.cryptomorin.xseries;
+package me.pirro.utils;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.google.common.base.Strings;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
